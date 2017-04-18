@@ -2,13 +2,21 @@
 
 namespace Radovan.Plugin.Core.Controls
 {
-    public class ExtendedImage: Image
+    public class ExtendedImage : Image
     {
-        public static readonly BindableProperty SourcePlatformProperty = BindableProperty.Create(propertyName: "SourcePlatform",
-               returnType: typeof(ImageSource),
-               declaringType: typeof(ExtendedImage),
-               defaultValue: default(ImageSource),
-               propertyChanged: OnSourcePlatformChanged);
+        #region SourcePlatform Bindable Property
+        public ImageSource SourcePlatform
+        {
+            get { return (ImageSource)GetValue(SourcePlatformProperty); }
+            set { SetValue(SourcePlatformProperty, value); }
+        }
+
+        public static readonly BindableProperty SourcePlatformProperty = BindableProperty.Create(
+            propertyName: nameof(SourcePlatform),
+            returnType: typeof(ImageSource),
+            declaringType: typeof(ExtendedImage),
+            defaultValue: default(ImageSource),
+            propertyChanged: OnSourcePlatformChanged);
 
         private static void OnSourcePlatformChanged(BindableObject bindable, object oldValue, object newValue)
         {
@@ -25,11 +33,6 @@ namespace Radovan.Plugin.Core.Controls
             SourcePlatform.File = path;
             bindable.SetValue(SourceProperty, SourcePlatform);
         }
-
-        public ImageSource SourcePlatform
-        {
-            get { return (ImageSource)GetValue(SourcePlatformProperty); }
-            set { SetValue(SourcePlatformProperty, value); }
-        }
+        #endregion
     }
 }
