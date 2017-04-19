@@ -37,13 +37,17 @@
     <DocumentationFile>bin\iPhone\Release\Radovan.Plugin.iOS.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RadovanImplementation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ExtendedListViewRender.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Radovan.Plugin.Abstractions\Radovan.Plugin.Abstractions.csproj">
       <Project>{14c534b6-1984-41a9-a384-d3a5508588e3}</Project>
       <Name>Radovan.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Radovan.Plugin.Core\Radovan.Plugin.Core.csproj">
+      <Project>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</Project>
+      <Name>Radovan.Plugin.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

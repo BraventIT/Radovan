@@ -28,6 +28,19 @@ namespace Radovan.Plugin.Core.Controls
             defaultValue: default(ICommand));
         #endregion
 
+        #region Scrollable Bindable Property
+        public bool Scrollable
+        {
+            get { return (bool)GetValue(ScrollableProperty); }
+            set { SetValue(ScrollableProperty, value); }
+        }
+
+        public static readonly BindableProperty ScrollableProperty = BindableProperty.Create(
+            propertyName: nameof(Scrollable),
+            returnType: typeof(bool),
+            declaringType: typeof(ExtendedListView),
+            defaultValue: true);
+        #endregion
 
         private void OnItemTapped(object sender, ItemTappedEventArgs e)
         {
