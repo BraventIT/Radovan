@@ -6,20 +6,20 @@ namespace Radovan.Plugin.Core.Controls
 	public class ExtendedEntry : Entry
 	{
 		public static readonly BindableProperty FontProperty =
-			BindableProperty.Create("Font", typeof(Font), typeof(ExtendedEntry), new Font());
+			BindableProperty.Create(nameof(Font), typeof(Font), typeof(ExtendedEntry), new Font());
 
 		public static readonly BindableProperty XAlignProperty =
-			BindableProperty.Create("XAlign", typeof(TextAlignment), typeof(ExtendedEntry),
+			BindableProperty.Create(nameof(XAlign), typeof(TextAlignment), typeof(ExtendedEntry),
 			TextAlignment.Start);
 
 		public static readonly BindableProperty HasBorderProperty =
-			BindableProperty.Create("HasBorder", typeof(bool), typeof(ExtendedEntry), true);
+			BindableProperty.Create(nameof(HasBorder), typeof(bool), typeof(ExtendedEntry), true);
 
 		public static readonly BindableProperty PlaceholderTextColorProperty =
-			BindableProperty.Create("PlaceholderTextColor", typeof(Color), typeof(ExtendedEntry), Color.Default);
+			BindableProperty.Create(nameof(PlaceholderTextColor), typeof(Color), typeof(ExtendedEntry), Color.Default);
 
 		public static readonly BindableProperty MaxLengthProperty =
-			BindableProperty.Create("MaxLength", typeof(int), typeof(ExtendedEntry), int.MaxValue);
+			BindableProperty.Create(nameof(MaxLength), typeof(int), typeof(ExtendedEntry), int.MaxValue);
 
 		public int MaxLength
 		{

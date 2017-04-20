@@ -91,6 +91,7 @@
     <Compile Include="Renderers\ExtendedEditorRenderer.cs" />
     <Compile Include="Renderers\ExtendedEntryRenderer.cs" />
     <Compile Include="Extensions\FontExtensions.cs" />
+    <Compile Include="Renderers\ExtendedLabelRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
