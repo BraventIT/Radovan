@@ -92,6 +92,7 @@
     <Compile Include="Renderers\ExtendedEntryRenderer.cs" />
     <Compile Include="Extensions\FontExtensions.cs" />
     <Compile Include="Renderers\ExtendedLabelRenderer.cs" />
+    <Compile Include="Renderers\ExtendedCheckBoxRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

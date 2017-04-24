@@ -7,7 +7,7 @@ namespace Radovan.Plugin.Core.Controls
 	{
 		#region Placeholder Bindable Property
 		public static readonly BindableProperty PlaceholderProperty =
-			BindableProperty.Create("Placeholder", typeof(string), typeof(ExtendedEditor), string.Empty, BindingMode.OneWay);
+			BindableProperty.Create(nameof(Placeholder), typeof(string), typeof(ExtendedEditor), string.Empty, BindingMode.OneWay);
 
 		public string Placeholder
 		{
