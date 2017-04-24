@@ -94,6 +94,7 @@
     <Compile Include="Renderers\ExtendedLabelRenderer.cs" />
     <Compile Include="Renderers\ExtendedCheckBoxRenderer.cs" />
     <Compile Include="Renderers\NoBorderButtonRenderer.cs" />
+    <Compile Include="Renderers\ImageButtonRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
