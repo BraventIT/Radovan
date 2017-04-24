@@ -48,6 +48,7 @@
     <Compile Include="Helpers\EventArgs{T}.cs" />
     <Compile Include="Extensions\BindableObjectExtensions.cs" />
     <Compile Include="Helpers\EventExtensions.cs" />
+    <Compile Include="Controls\NoBorderButton.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">

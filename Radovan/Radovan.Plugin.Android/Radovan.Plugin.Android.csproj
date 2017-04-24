@@ -93,6 +93,7 @@
     <Compile Include="Extensions\FontExtensions.cs" />
     <Compile Include="Renderers\ExtendedLabelRenderer.cs" />
     <Compile Include="Renderers\ExtendedCheckBoxRenderer.cs" />
+    <Compile Include="Renderers\NoBorderButtonRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
