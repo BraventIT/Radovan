@@ -38,6 +38,7 @@
     <Compile Include="Controls\ExtendedDatePicker.cs" />
     <Compile Include="Controls\ExtendedImage.cs" />
     <Compile Include="Controls\ExtendedListView.cs" />
+    <Compile Include="Controls\ExtendedToolbarItem.cs" />
     <Compile Include="Controls\IncrementalListView.cs" />
     <Compile Include="Converters\BooleanToColorConverter.cs" />
     <Compile Include="Converters\ImagePlatformConverter.cs" />
