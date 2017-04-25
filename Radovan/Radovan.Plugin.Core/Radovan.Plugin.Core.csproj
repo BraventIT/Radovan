@@ -35,14 +35,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Controls\ExtendedDatePicker.cs" />
     <Compile Include="Controls\ExtendedImage.cs" />
     <Compile Include="Controls\ExtendedListView.cs" />
-    <Compile Include="Controls\ExtendedToolbarItem.cs" />
     <Compile Include="Controls\IncrementalListView.cs" />
     <Compile Include="Converters\BooleanToColorConverter.cs" />
-    <Compile Include="Converters\ImagePlatformConverter.cs" />
-    <Compile Include="Converters\InverseBoolConverter.cs" />
     <Compile Include="Incremental\IncrementalObservableCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\ExtendedEditor.cs" />
@@ -55,6 +51,18 @@
     <Compile Include="Controls\NoBorderButton.cs" />
     <Compile Include="Controls\ImageButton.cs" />
     <Compile Include="Enums\ImageOrientation.cs" />
+    <Compile Include="Behaviors\Gestures\GestureCollection.cs" />
+    <Compile Include="Behaviors\Gestures\GestureInterest.cs" />
+    <Compile Include="Behaviors\Gestures\GestureResult.cs" />
+    <Compile Include="Behaviors\Gestures\Gestures.cs" />
+    <Compile Include="Behaviors\Gestures\IGesture.cs" />
+    <Compile Include="Behaviors\Gestures\RelayGesture.cs" />
+    <Compile Include="Behaviors\Gestures\RelayGestureAsync.cs" />
+    <Compile Include="Controls\GesturesContentView.cs" />
+    <Compile Include="Enums\GestureNotification.cs" />
+    <Compile Include="Enums\Directionality.cs" />
+    <Compile Include="Enums\GestureType.cs" />
+    <Compile Include="Controls\ExtendedDatePicker.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -77,7 +85,13 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Helpers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Enums\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Behaviors\Gestures\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
