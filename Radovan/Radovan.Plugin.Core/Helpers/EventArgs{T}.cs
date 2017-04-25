@@ -6,7 +6,7 @@ namespace Radovan.Plugin.Core.Helpers
 
 		public EventArgs(T value)
 		{
-			this.Value = value;
+            Value = value;
 		}
 
 		public T Value { get; private set; }
