@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+<package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
     <metadata>
         <id>Radovan.Plugin</id>
         <version>$version$</version>
@@ -19,16 +19,22 @@
         <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Abstractions.pdb" />
         <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.dll" target="lib\MonoAndroid10\Radovan.Plugin.Android.dll" />
         <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Android.pdb" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\MonoAndroid10\Radovan.Plugin.Core.dll" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Core.pdb" />
         <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.dll" />
         <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.pdb" />
         <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.dll" />
         <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.pdb" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\uap10.0\Radovan.Plugin.Abstractions.dll" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\uap10.0\Radovan.Plugin.Abstractions.pdb" />
-        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.dll" target="lib\uap10.0\Radovan.Plugin.UWP.dll" />
-        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.pri" target="lib\uap10.0\Radovan.Plugin.UWP.pri" />
+        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\uap10\Radovan.Plugin.Abstractions.dll" />
+        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\uap10\Radovan.Plugin.Abstractions.pdb" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\uap10\Radovan.Plugin.Core.dll" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\uap10\Radovan.Plugin.Core.pdb" />
+        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.dll" target="lib\uap10\Radovan.Plugin.UWP.dll" />
+        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.pri" target="lib\uap10\Radovan.Plugin.UWP.pri" />
         <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.dll" />
         <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.pdb" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Core.dll" />
+        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Core.pdb" />
         <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\xamarin.iOS10\Radovan.Plugin.iOS.dll" />
     </files>
 </package>
