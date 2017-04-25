@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.12
+VisualStudioVersion = 15.0.26403.7
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radovan.Plugin.UWP", "Radovan\Radovan.Plugin.UWP\Radovan.Plugin.UWP.csproj", "{238E0DAB-A815-4431-B3C7-8B933B961AB5}"
 EndProject
@@ -20,6 +20,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radovan.Sample.iOS", "Samples\iOS\Radovan.Sample.iOS.csproj", "{1CE84839-ED12-4CA1-AAC7-E8D43FBA53E5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Radovan.Sample.Droid", "Samples\Droid\Radovan.Sample.Droid.csproj", "{B4F767C5-4CB9-4496-A387-D85C0AA8AB0A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nuget", "Nuget", "{DD6FE84F-DE84-43CB-8BD7-E047AF8EB1B9}"
+	ProjectSection(SolutionItems) = preProject
+		Radovan\Nuget\BuildNuget.bat = Radovan\Nuget\BuildNuget.bat
+		Radovan\Nuget\Radovan.Plugin.nuspec = Radovan\Nuget\Radovan.Plugin.nuspec
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

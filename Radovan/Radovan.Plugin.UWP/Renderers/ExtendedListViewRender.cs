@@ -18,7 +18,7 @@ namespace Radovan.Plugin.UWP.Renderers
 
             var listView = Control as ListView;
 
-            if (e.NewElement != null && !((ExtendedListView)Element).Scrollable)
+            if (e.NewElement != null && !((ExtendedListView)Element).IsScrollable)
             {
                 listView.Loaded += OnListViewLoaded;
             }

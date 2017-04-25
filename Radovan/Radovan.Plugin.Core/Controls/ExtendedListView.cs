@@ -29,14 +29,14 @@ namespace Radovan.Plugin.Core.Controls
         #endregion
 
         #region Scrollable Bindable Property
-        public bool Scrollable
+        public bool IsScrollable
         {
-            get { return (bool)GetValue(ScrollableProperty); }
-            set { SetValue(ScrollableProperty, value); }
+            get { return (bool)GetValue(IsScrollableProperty); }
+            set { SetValue(IsScrollableProperty, value); }
         }
 
-        public static readonly BindableProperty ScrollableProperty = BindableProperty.Create(
-            propertyName: nameof(Scrollable),
+        public static readonly BindableProperty IsScrollableProperty = BindableProperty.Create(
+            propertyName: nameof(IsScrollable),
             returnType: typeof(bool),
             declaringType: typeof(ExtendedListView),
             defaultValue: true);

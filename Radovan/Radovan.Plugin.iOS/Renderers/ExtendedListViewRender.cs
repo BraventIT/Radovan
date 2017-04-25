@@ -12,7 +12,7 @@ namespace Radovan.Plugin.iOS.Renderers
         {
             base.OnElementChanged(e);
 
-            if (e.NewElement != null && !((ExtendedListView)Element).Scrollable)
+            if (e.NewElement != null && !((ExtendedListView)Element).IsScrollable)
             {
                 Control.ScrollEnabled = false;
             }
