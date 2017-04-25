@@ -35,6 +35,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Controls\ExtendedDatePicker.cs" />
     <Compile Include="Controls\ExtendedImage.cs" />
     <Compile Include="Controls\ExtendedListView.cs" />
     <Compile Include="Controls\IncrementalListView.cs" />

@@ -86,8 +86,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Renderers\ExtendedDatePickerRenderer.cs" />
     <Compile Include="Renderers\ExtendedEditorRenderer.cs" />
     <Compile Include="Renderers\ExtendedEntryRenderer.cs" />
     <Compile Include="Extensions\FontExtensions.cs" />
@@ -107,10 +107,7 @@
       <Name>Radovan.Plugin.Core</Name>
     </ProjectReference>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Renderers\" />
-    <Folder Include="Extensions\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
