@@ -1,40 +1,48 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
-    <metadata>
-        <id>Radovan.Plugin</id>
-        <version>$version$</version>
-        <title>Radovan Components Library</title>
-        <authors>Bravent</authors>
-        <projectUrl>http://213.37.1.153:4141/tfs/ColeccionProyectos/Movilidad%20Git/_git/RadovanComponents</projectUrl>
-        <iconUrl>http://www.bravent.net/wp-content/uploads/2015/10/partner.png</iconUrl>
-        <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Radovan components library</description>
-        <copyright>Bravent</copyright>
-        <dependencies>
-            <dependency id="Xamarin.Forms" version="2.3.2.127" />
-        </dependencies>
-    </metadata>
-    <files>
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\MonoAndroid10\Radovan.Plugin.Abstractions.dll" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Abstractions.pdb" />
-        <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.dll" target="lib\MonoAndroid10\Radovan.Plugin.Android.dll" />
-        <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Android.pdb" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\MonoAndroid10\Radovan.Plugin.Core.dll" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Core.pdb" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.dll" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.pdb" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.dll" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.pdb" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\uap10\Radovan.Plugin.Abstractions.dll" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\uap10\Radovan.Plugin.Abstractions.pdb" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\uap10\Radovan.Plugin.Core.dll" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\uap10\Radovan.Plugin.Core.pdb" />
-        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.dll" target="lib\uap10\Radovan.Plugin.UWP.dll" />
-        <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.pri" target="lib\uap10\Radovan.Plugin.UWP.pri" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.dll" />
-        <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.pdb" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Core.dll" />
-        <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Core.pdb" />
-        <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\xamarin.iOS10\Radovan.Plugin.iOS.dll" />
-    </files>
+  <metadata>
+    <id>Radovan.Plugin</id>
+    <version>$version$</version>
+    <title>Radovan Components Library</title>
+    <authors>Bravent</authors>
+    <projectUrl>http://213.37.1.153:4141/tfs/ColeccionProyectos/Movilidad%20Git/_git/RadovanComponents</projectUrl>
+    <iconUrl>http://www.bravent.net/wp-content/uploads/2015/10/partner.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Radovan components library</description>
+    <copyright>Bravent</copyright>
+    <dependencies>
+      <dependency id="Xamarin.Forms" version="2.3.2.127" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\MonoAndroid10\Radovan.Plugin.Abstractions.dll" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Abstractions.pdb" />
+    <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.dll" target="lib\MonoAndroid10\Radovan.Plugin.Android.dll" />
+    <file src="..\Radovan.Plugin.Android\bin\Release\Radovan.Plugin.Android.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Android.pdb" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\MonoAndroid10\Radovan.Plugin.Core.dll" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\MonoAndroid10\Radovan.Plugin.Core.pdb" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.dll" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Abstractions.pdb" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.dll" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+uap10\Radovan.Plugin.Core.pdb" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\uap10\Radovan.Plugin.Abstractions.dll" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\uap10\Radovan.Plugin.Abstractions.pdb" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\uap10\Radovan.Plugin.Core.dll" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\uap10\Radovan.Plugin.Core.pdb" />
+    <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.dll" target="lib\uap10\Radovan.Plugin.UWP.dll" />
+    <file src="..\Radovan.Plugin.UWP\bin\Release\Radovan.Plugin.UWP.pri" target="lib\uap10\Radovan.Plugin.UWP.pri" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.dll" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.pdb" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Core.dll" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Core.pdb" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\xamarin.iOS10\Radovan.Plugin.iOS.dll" />
+
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\MonoAndroid10\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\MonoTouch10\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\Xamarin.iOS10\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\UAP10\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\wp8\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\wpa81\Helpers\ImageResizer.cs.pp" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\win8\Helpers\ImageResizer.cs.pp" />
+  </files>
 </package>

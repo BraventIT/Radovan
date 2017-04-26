@@ -41,6 +41,7 @@
     <Compile Include="Controls\ExtendedListView.cs" />
     <Compile Include="Controls\IncrementalListView.cs" />
     <Compile Include="Converters\BooleanToColorConverter.cs" />
+    <Compile Include="Helpers\ImageResizerManager.cs" />
     <Compile Include="Incremental\IncrementalObservableCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controls\ExtendedEditor.cs" />
@@ -87,13 +88,7 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup />
-  <ItemGroup>
-    <Folder Include="Helpers\" />
-    <Folder Include="Extensions\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Behaviors\" />
-    <Folder Include="Behaviors\Gestures\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -103,10 +98,8 @@
     <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.3.193\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
   </Target>
   <PropertyGroup>
-    <PostBuildEvent>if $(ConfigurationName)==Release (
-	$(ProjectDir)nuget.exe pack $(ProjectPath) -Properties Configuration=$(Configuration)
-	$(ProjectDir)nuget.exe push $(TargetDir)$(ProjectName).*.nupkg 2aebff46-0995-4acc-9f7a-48261c6c5e96 -Source http://213.37.1.153:5151
-)</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

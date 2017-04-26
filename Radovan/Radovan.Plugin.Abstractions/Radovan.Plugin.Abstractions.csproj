@@ -37,6 +37,7 @@
     <DocumentationFile>bin\Release\Radovan.Plugin.Abstractions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Helpers\IImageResizer.cs" />
     <Compile Include="Incremental\IIncrementalRepository.cs" />
     <Compile Include="Incremental\IncrementalResult.cs" />
     <Compile Include="Incremental\ISupportIncrementalLoading.cs" />
