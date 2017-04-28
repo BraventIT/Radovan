@@ -28,14 +28,11 @@ namespace Radovan.Plugin.UWP.Renderers
         {
             var listView = sender as ListView;
 
-            listView.Background = new SolidColorBrush(Colors.Red);
-
             listView.Loaded -= OnListViewLoaded;
 
             var scroll = listView.FindFirstChild<ScrollViewer>();
             if (scroll != null)
             {
-
                 scroll.VerticalScrollMode = ScrollMode.Disabled;
             }
         }

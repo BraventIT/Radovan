@@ -1,8 +1,9 @@
 @echo off
-
+del *.nupkg
 @echo Primero vamos a generar el paquete. Recueda cambiar la variable 'version' de este script
 pause
-nuget.exe pack Radovan.Plugin.nuspec -Properties version=1.0.0.3
+cls
+nuget.exe pack Radovan.Plugin.nuspec -Properties version=1.0.0.6
 
 @echo Comprueba que se ha generado correctamente porque vamos a subirlo a nuestro servidor!!!
 pause

@@ -33,14 +33,18 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <RunCodeAnalysis>true</RunCodeAnalysis>
+    <RunCodeAnalysis>false</RunCodeAnalysis>
     <CodeAnalysisRuleSet>BasicCorrectnessRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Controls\ExtendedImage.cs" />
     <Compile Include="Controls\ExtendedListView.cs" />
+    <Compile Include="Controls\ExtendedToolbarItem.cs" />
     <Compile Include="Controls\IncrementalListView.cs" />
     <Compile Include="Converters\BooleanToColorConverter.cs" />
+    <Compile Include="Converters\ImagePlatformConverter.cs" />
+    <Compile Include="Converters\IntegerToBooleanConverter.cs" />
+    <Compile Include="Converters\InverseBoolConverter.cs" />
     <Compile Include="Helpers\ImageResizerManager.cs" />
     <Compile Include="Incremental\IncrementalObservableCollection.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -62,9 +66,9 @@
     <Compile Include="Behaviors\Gestures\RelayGesture.cs" />
     <Compile Include="Behaviors\Gestures\RelayGestureAsync.cs" />
     <Compile Include="Controls\GesturesContentView.cs" />
-    <Compile Include="Enums\GestureNotification.cs" />
-    <Compile Include="Enums\Directionality.cs" />
-    <Compile Include="Enums\GestureType.cs" />
+    <Compile Include="Enums\Gestures\GestureNotification.cs" />
+    <Compile Include="Enums\Gestures\Directionality.cs" />
+    <Compile Include="Enums\Gestures\GestureType.cs" />
     <Compile Include="Controls\ExtendedDatePicker.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -79,6 +83,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Helpers\ImageResizer.cs.pp" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>

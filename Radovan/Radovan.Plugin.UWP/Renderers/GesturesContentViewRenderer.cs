@@ -3,6 +3,7 @@ using Radovan.Plugin.Core.Controls;
 using Radovan.Plugin.Core.Enums;
 using Radovan.Plugin.UWP.Renderers;
 using Windows.UI.Xaml;
+using Windows.UI.Xaml.Input;
 using Xamarin.Forms.Platform.UWP;
 
 [assembly: ExportRenderer(typeof(GesturesContentView), typeof(GesturesContentViewRenderer))]
@@ -23,7 +24,7 @@ namespace Radovan.Plugin.UWP.Renderers
             Holding += GesturesContentViewRenderer_Holding;
         }
 
-        private void GesturesContentViewRenderer_Holding(object sender, Windows.UI.Xaml.Input.HoldingRoutedEventArgs e)
+        private void GesturesContentViewRenderer_Holding(object sender, HoldingRoutedEventArgs e)
         {
             Element.ProcessGesture(new GestureResult
             {
@@ -33,7 +34,7 @@ namespace Radovan.Plugin.UWP.Renderers
             });
         }
 
-        private void GesturesContentViewRenderer_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+        private void GesturesContentViewRenderer_Tapped(object sender, TappedRoutedEventArgs e)
         {
             Element.ProcessGesture(new GestureResult
             {
