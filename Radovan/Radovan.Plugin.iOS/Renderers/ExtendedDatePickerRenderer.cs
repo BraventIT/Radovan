@@ -37,6 +37,11 @@ namespace Radovan.Plugin.iOS.Renderers
                 SetPlaceholderTextColor(view);
 
                 ResizeHeight();
+
+                this.Control.TextColor = view.TextColor.ToUIColor();
+                this.Control.Font = this.Control.Font.WithSize(view.FontSize);
+
+                this.Control.LayoutMargins = new UIEdgeInsets(10, 0, 10, 0);
             }
         }
 

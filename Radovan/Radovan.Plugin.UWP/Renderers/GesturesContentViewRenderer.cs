@@ -11,37 +11,45 @@ namespace Radovan.Plugin.UWP.Renderers
 {
     public class GesturesContentViewRenderer : ViewRenderer<GesturesContentView, FrameworkElement>
     {
-        protected override void OnElementChanged(ElementChangedEventArgs<GesturesContentView> e)
-        {
-            base.OnElementChanged(e);
-            if (e.NewElement == null)
-            {
-                Tapped -= GesturesContentViewRenderer_Tapped;
-                Holding -= GesturesContentViewRenderer_Holding;
-            }
-            if (e.OldElement != null) return;
-            Tapped += GesturesContentViewRenderer_Tapped;
-            Holding += GesturesContentViewRenderer_Holding;
-        }
+		bool isHolding = false;
 
-        private void GesturesContentViewRenderer_Holding(object sender, HoldingRoutedEventArgs e)
-        {
-            Element.ProcessGesture(new GestureResult
-            {
-                ViewStack = null,
-                GestureType = GestureType.LongPress,
-                Direction = Directionality.None,
-            });
-        }
+		protected override void OnElementChanged(ElementChangedEventArgs<GesturesContentView> e)
+		{
+			base.OnElementChanged(e);
+			if (e.NewElement == null)
+			{
+				Tapped -= GesturesContentViewRenderer_Tapped;
+				Holding -= GesturesContentViewRenderer_Holding;
+			}
+			if (e.OldElement != null) return;
+			Tapped += GesturesContentViewRenderer_Tapped;
+			Holding += GesturesContentViewRenderer_Holding;
+		}
 
-        private void GesturesContentViewRenderer_Tapped(object sender, TappedRoutedEventArgs e)
-        {
-            Element.ProcessGesture(new GestureResult
-            {
-                ViewStack = null,
-                GestureType = GestureType.SingleTap,
-                Direction = Directionality.None,
-            });
-        }
-    }
+		private void GesturesContentViewRenderer_Holding(object sender, Windows.UI.Xaml.Input.HoldingRoutedEventArgs e)
+		{
+			if (!isHolding)
+			{
+				Element.ProcessGesture(new GestureResult
+				{
+					ViewStack = null,
+					GestureType = GestureType.LongPress,
+					Direction = Directionality.None,
+				});
+				isHolding = true;
+			}
+			else
+				isHolding = false;
+		}
+
+		private void GesturesContentViewRenderer_Tapped(object sender, Windows.UI.Xaml.Input.TappedRoutedEventArgs e)
+		{
+			Element.ProcessGesture(new GestureResult
+			{
+				ViewStack = null,
+				GestureType = GestureType.SingleTap,
+				Direction = Directionality.None,
+			});
+		}
+	}
 }

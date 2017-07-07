@@ -48,6 +48,8 @@
     <Compile Include="Extensions\StringExtensions.cs" />
     <Compile Include="Renderers\ImageButtonRenderer.cs" />
     <Compile Include="Renderers\GesturesContentViewRenderer.cs" />
+    <Compile Include="Renderers\MultiLabelRenderer.cs" />
+    <Compile Include="Renderers\ExtendedDatePickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Radovan.Plugin.Abstractions\Radovan.Plugin.Abstractions.csproj">

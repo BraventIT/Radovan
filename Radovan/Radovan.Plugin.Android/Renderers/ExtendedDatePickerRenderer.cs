@@ -29,7 +29,12 @@ namespace Radovan.Plugin.Android.Renderers
                 SetNullableText(view);
                 SetPlaceholder(view);
                 SetPlaceholderTextColor(view);
-            }
+
+				//Control?.SetBackgroundColor(Android.Graphics.Color.Transparent);
+                this.Control.SetTextColor(view.TextColor.ToAndroid());
+                this.Control.TextSize = view.FontSize;
+
+			}
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

@@ -25,7 +25,7 @@ public class ExtendedEditorRenderer : EditorRenderer
 			Control.Text = Placeholder;
 
 			Control.Layer.CornerRadius = 3;
-			Control.Layer.BorderColor = Color.FromHex("F0F0F0").ToCGColor();
+            Control.Layer.BorderColor = element.BorderColor.ToCGColor();
 			Control.Layer.BorderWidth = 2;
 
 			Control.ShouldBeginEditing += (UITextView textView) =>

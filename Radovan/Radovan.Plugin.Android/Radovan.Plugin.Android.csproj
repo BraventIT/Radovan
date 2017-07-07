@@ -95,6 +95,8 @@
     <Compile Include="Renderers\NoBorderButtonRenderer.cs" />
     <Compile Include="Renderers\ImageButtonRenderer.cs" />
     <Compile Include="Renderers\GesturesContentViewRenderer.cs" />
+    <Compile Include="Renderers\MultiLineRenderer.cs" />
+    <Compile Include="Renderers\ExtendedDatePickerRenderer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

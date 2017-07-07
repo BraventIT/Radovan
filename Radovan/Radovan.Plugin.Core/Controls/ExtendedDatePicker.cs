@@ -83,10 +83,21 @@ namespace Radovan.Plugin.Core.Controls
         public static readonly BindableProperty PlaceholderTextColorProperty =
             BindableProperty.Create("PlaceholderTextColor", typeof(Color), typeof(ExtendedDatePicker), Color.Default);
 
-        /// <summary>
-        /// Get or sets the NullableDate
-        /// </summary>
-      
+		/// <summary>
+		/// Get or sets the NullableDate
+		/// </summary>
+
+		/// <summary>
+		/// The TextColor property
+		/// </summary>
+		public static readonly BindableProperty TextColorProperty =
+            BindableProperty.Create("TextColor", typeof(Color), typeof(ExtendedDatePicker), Color.Default);
+
+		/// <summary>
+		/// The FontSize propert
+		/// </summary>
+		public static readonly BindableProperty FontSizeProperty =
+            BindableProperty.Create("FontSize", typeof(int), typeof(ExtendedDatePicker), 0);
 
         /// <summary>
         /// Gets or sets the X alignment of the text
@@ -125,9 +136,25 @@ namespace Radovan.Plugin.Core.Controls
             set { SetValue(PlaceholderTextColorProperty, value); }
         }
 
-       
+		/// <summary>
+        /// Sets color for text
+        /// </summary>
+        public Color TextColor
+        {
+            get { return (Color)GetValue(TextColorProperty); }
+            set { SetValue(TextColorProperty, value); }
+        }
 
-        protected override void OnBindingContextChanged()
+		/// <summary>
+		/// Sets FontSize for text
+		/// </summary>
+        public int FontSize
+		{
+            get { return (int)GetValue(FontSizeProperty); }
+            set { SetValue(FontSizeProperty, value); }
+		}
+
+		protected override void OnBindingContextChanged()
         {
             base.OnBindingContextChanged();
             UpdateDate();

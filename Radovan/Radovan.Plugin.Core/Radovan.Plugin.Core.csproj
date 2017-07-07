@@ -70,6 +70,10 @@
     <Compile Include="Enums\Gestures\Directionality.cs" />
     <Compile Include="Enums\Gestures\GestureType.cs" />
     <Compile Include="Controls\ExtendedDatePicker.cs" />
+    <Compile Include="Converters\CapitalLettersConverter.cs" />
+    <Compile Include="Controls\MultiLineLabel.cs" />
+    <Compile Include="Converters\ColorConverter.cs" />
+    <Compile Include="Helpers\Annotations.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -92,6 +96,7 @@
       <Name>Radovan.Plugin.Abstractions</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <ItemGroup />
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />

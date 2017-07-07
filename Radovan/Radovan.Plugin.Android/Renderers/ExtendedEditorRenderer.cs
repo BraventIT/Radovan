@@ -21,8 +21,7 @@ public class ExtendedEditorRenderer : EditorRenderer
 			var element = e.NewElement as ExtendedEditor;
 			this.Control.Hint = element.Placeholder;
 
-			var customColor = Xamarin.Forms.Color.FromHex("#F0F0F0");
-			Control.Background.SetColorFilter(customColor.ToAndroid(), PorterDuff.Mode.SrcAtop);
+			Control.Background.SetColorFilter(element.BorderColor.ToAndroid(), PorterDuff.Mode.SrcAtop);
 		}
 	}
 
