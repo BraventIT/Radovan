@@ -25,6 +25,30 @@ namespace Radovan.Plugin.Core.Controls
             get { return (Color)GetValue(BorderColorProperty); }
 			set { SetValue(BorderColorProperty, value); }
 		}
-		#endregion
-	}
+        #endregion
+
+        #region BackgroundColor Bindable Property
+        public static readonly BindableProperty ExtendedBackgroundColorProperty =
+            BindableProperty.Create(nameof(ExtendedBackgroundColor), typeof(Color), typeof(ExtendedEditor), Color.Default, BindingMode.OneWay);
+
+        public Color ExtendedBackgroundColor 
+        {
+            get { return (Color)GetValue(ExtendedBackgroundColorProperty); }
+            set { SetValue(ExtendedBackgroundColorProperty, value); }
+        }
+        #endregion
+
+        #region HintTextColor Bindable Property
+        public static readonly BindableProperty HintTextColorProperty =
+            BindableProperty.Create(nameof(HintTextColorProperty), typeof(Color), typeof(ExtendedEditor), Color.FromHex("#d9d9d9"), BindingMode.OneWay);
+
+        public Color HintTextColor
+        {
+            get { return (Color)GetValue(HintTextColorProperty); }
+            set { SetValue(HintTextColorProperty, value); }
+        }
+        #endregion
+
+        
+    }
 }

@@ -5,6 +5,7 @@ using Radovan.Plugin.Core.Controls;
 using Radovan.Plugin.Android.Renderers;
 using System.ComponentModel;
 
+
 [assembly: ExportRenderer(typeof(ExtendedDatePicker), typeof(ExtendedDatePickerRenderer))]
 namespace Radovan.Plugin.Android.Renderers
 {
@@ -30,11 +31,19 @@ namespace Radovan.Plugin.Android.Renderers
                 SetPlaceholder(view);
                 SetPlaceholderTextColor(view);
 
-				//Control?.SetBackgroundColor(Android.Graphics.Color.Transparent);
                 this.Control.SetTextColor(view.TextColor.ToAndroid());
                 this.Control.TextSize = view.FontSize;
 
-			}
+                if (Device.Idiom == TargetIdiom.Tablet)
+                {
+                    Control.SetPadding(0, view.MarginTopTablet, 0, 0);
+                }
+
+                if(view.BackgroundTransparent)
+                    Control?.SetBackgroundColor(global::Android.Graphics.Color.Transparent);
+
+
+            }
         }
 
         protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)

@@ -100,6 +100,18 @@ namespace Radovan.Plugin.Core.Controls
             BindableProperty.Create("FontSize", typeof(int), typeof(ExtendedDatePicker), 0);
 
         /// <summary>
+		/// The margin top tablet propert
+		/// </summary>
+		public static readonly BindableProperty MarginTopTabletProperty =
+            BindableProperty.Create("MarginTopTablet", typeof(int), typeof(ExtendedDatePicker), 0);
+
+        /// <summary>
+        /// The background transparent propert
+        /// </summary>
+        public static readonly BindableProperty BackgroundTransparentProperty =
+            BindableProperty.Create("BackgroundTransparent", typeof(bool), typeof(ExtendedDatePicker), true);
+
+        /// <summary>
         /// Gets or sets the X alignment of the text
         /// </summary>
         public TextAlignment XAlign
@@ -154,7 +166,27 @@ namespace Radovan.Plugin.Core.Controls
             set { SetValue(FontSizeProperty, value); }
 		}
 
-		protected override void OnBindingContextChanged()
+        /// <summary>
+		/// Sets magin top tablet
+		/// </summary>
+        public int MarginTopTablet
+        {
+            get { return (int)GetValue(MarginTopTabletProperty); }
+            set { SetValue(MarginTopTabletProperty, value); }
+        }
+
+        /// <summary>
+		/// Sets Background Transparent
+		/// </summary>
+        public bool BackgroundTransparent
+        {
+            get { return (bool)GetValue(BackgroundTransparentProperty); }
+            set { SetValue(BackgroundTransparentProperty, value); }
+        }
+
+        
+
+        protected override void OnBindingContextChanged()
         {
             base.OnBindingContextChanged();
             UpdateDate();
