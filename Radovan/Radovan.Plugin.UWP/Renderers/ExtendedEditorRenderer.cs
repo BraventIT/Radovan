@@ -21,7 +21,7 @@ namespace Radovan.Plugin.UWP.Renderers
             if (Control != null && element != null)
             {
                 Control.BorderThickness = new Windows.UI.Xaml.Thickness(1);
-                var color = element.BorderColor;
+                var color = Color.FromHex("#d9d9d9");
                 Windows.UI.Color wpColor = Windows.UI.Color.FromArgb(
                             (byte)(color.A * 255),
                             (byte)(color.R * 255),
