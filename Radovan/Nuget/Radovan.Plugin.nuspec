@@ -11,7 +11,11 @@
     <description>Radovan components library</description>
     <copyright>Bravent</copyright>
     <dependencies>
-      <dependency id="Xamarin.Forms" version="2.3.2.127" />
+     <group targetFramework="Xamarin.iOS10">
+             <dependency id="Xamarin.Forms" version="2.3.2.127" />    
+
+        <!--Xamarin.iOS10 dependencies go here-->
+    </group>
     </dependencies>
   </metadata>
   <files>    
@@ -31,20 +35,31 @@
     <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\MonoAndroid10\Helpers\ImageResizer.cs.pp" />
 
     <!--Xamarin.iOS Unified-->
-    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.dll" />
-    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Abstractions.pdb" />
-    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\xamarin.iOS10\Radovan.Plugin.Core.dll" />    
-    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\xamarin.iOS10\Radovan.Plugin.Core.pdb" />
-    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.xml" target="lib\xamarin.iOS10\Radovan.Plugin.iOS.xml" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\Xamarin.iOS10" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\Xamarin.iOS10" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\Xamarin.iOS10" />    
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\Xamarin.iOS10" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\Xamarin.iOS10" /> 
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.xml" target="lib\Xamarin.iOS10" />
     <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\Xamarin.iOS10\Helpers\ImageResizer.cs.pp" />
 
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.xml" target="lib\xamarinios10" />
+    <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\xamarinios10\Helpers\ImageResizer.cs.pp" />
+
+    
+
     <!--Xamarin.iOS-->
-    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\MonoTouch10\Radovan.Plugin.Abstractions.dll" />
-    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\MonoTouch10\Radovan.Plugin.Abstractions.pdb" />
-    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\MonoTouch10\Radovan.Plugin.Core.dll" />
-    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\MonoTouch10\Radovan.Plugin.Core.pdb" />
-    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\MonoTouch10\Radovan.Plugin.iOS.dll" />
-    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.xml" target="lib\MonoTouch10\Radovan.Plugin.iOS.xml" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.dll" target="lib\MonoTouch10" />
+    <file src="..\Radovan.Plugin.Abstractions\bin\Release\Radovan.Plugin.Abstractions.pdb" target="lib\MonoTouch10" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.dll" target="lib\MonoTouch10" />
+    <file src="..\Radovan.Plugin.Core\bin\Release\Radovan.Plugin.Core.pdb" target="lib\MonoTouch10" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.dll" target="lib\MonoTouch10" />
+    <file src="..\Radovan.Plugin.iOS\bin\iPhone\Release\Radovan.Plugin.iOS.xml" target="lib\MonoTouch10" />
     <file src="..\Radovan.Plugin.Core\Helpers\ImageResizer.cs.pp" target="content\MonoTouch10\Helpers\ImageResizer.cs.pp" />
 
     <!--Windows-->
