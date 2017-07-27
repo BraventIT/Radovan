@@ -1,4 +1,5 @@
-﻿using Xamarin.Forms;
+﻿using Radovan.Plugin.Core.Controls;
+using Xamarin.Forms;
 
 namespace Radovan.Sample
 {
