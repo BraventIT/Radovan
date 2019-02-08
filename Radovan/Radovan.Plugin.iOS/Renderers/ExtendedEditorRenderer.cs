@@ -9,60 +9,61 @@ using Xamarin.Forms.Platform.iOS;
 [assembly: ExportRenderer(typeof(ExtendedEditor), typeof(ExtendedEditorRenderer))]
 namespace Radovan.Plugin.iOS.Renderers
 {
-public class ExtendedEditorRenderer : EditorRenderer
-{
-	private string Placeholder { get; set; }
+    public class ExtendedEditorRenderer : EditorRenderer
+    {
+        private string Placeholder { get; set; }
 
-	protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
-	{
-		base.OnElementChanged(e);
-		var element = this.Element as ExtendedEditor;
+        protected override void OnElementChanged(ElementChangedEventArgs<Editor> e)
+        {
+            base.OnElementChanged(e);
+            var element = this.Element as ExtendedEditor;
 
-		if (Control != null && element != null)
-		{
-			Placeholder = element.Placeholder;
-			Control.TextColor = UIColor.LightGray;
-			Control.Text = Placeholder;
+            if (Control != null && element != null)
+            {
+                Placeholder = element.Placeholder;
+                Control.TextColor = element.HintTextColor.ToUIColor();
+                Control.Text = Placeholder;
 
-			Control.Layer.CornerRadius = 3;
-			Control.Layer.BorderColor = Color.FromHex("F0F0F0").ToCGColor();
-			Control.Layer.BorderWidth = 2;
+                Control.Layer.CornerRadius = 3;
+                Control.Layer.BorderColor = element.BorderColor.ToCGColor();
+                Control.Layer.BorderWidth = 2;
 
-			Control.ShouldBeginEditing += (UITextView textView) =>
-			{
-				if (textView.Text == Placeholder)
-				{
-					textView.Text = "";
-					textView.TextColor = UIColor.Black; // Text Color
-					}
+                Control.ShouldBeginEditing += (UITextView textView) =>
+                {
+                    if (textView.Text == Placeholder)
+                    {
+                        textView.Text = "";
+                        textView.TextColor = UIColor.Black; // Text Color
+                }
 
-				return true;
-			};
+                    return true;
+                };
 
-			Control.ShouldEndEditing += (UITextView textView) =>
-			{
-				if (textView.Text == "")
-				{
-					textView.Text = Placeholder;
-					textView.TextColor = UIColor.LightGray; // Placeholder Color
-					}
+                Control.ShouldEndEditing += (UITextView textView) =>
+                {
+                    if (textView.Text == "")
+                    {
+                        textView.Text = Placeholder;
+                        textView.TextColor = element.HintTextColor.ToUIColor(); ; // Placeholder Color
+                }
 
-				return true;
-			};
-		}
-	}
+                    return true;
+                };
+            }
+        }
 
-	protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
-	{
-		base.OnElementPropertyChanged(sender, e);
+        protected override void OnElementPropertyChanged(object sender, PropertyChangedEventArgs e)
+        {
+            base.OnElementPropertyChanged(sender, e);
 
-		var view = (ExtendedEditor)Element;
+            var view = (ExtendedEditor)Element;
 
-		if (e.PropertyName == ExtendedEditor.PlaceholderProperty.PropertyName)
-		{
-			Placeholder = view.Placeholder;
-			Control.TextColor = UIColor.LightGray;
-			Control.Text = Placeholder;
-		}
-	}	}
+            if (e.PropertyName == ExtendedEditor.PlaceholderProperty.PropertyName)
+            {
+                Placeholder = view.Placeholder;
+                Control.TextColor = view.HintTextColor.ToUIColor();
+                Control.Text = Placeholder;
+            }
+        }
+    }
 }

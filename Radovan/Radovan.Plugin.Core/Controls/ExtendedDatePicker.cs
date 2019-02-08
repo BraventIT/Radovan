@@ -83,10 +83,33 @@ namespace Radovan.Plugin.Core.Controls
         public static readonly BindableProperty PlaceholderTextColorProperty =
             BindableProperty.Create("PlaceholderTextColor", typeof(Color), typeof(ExtendedDatePicker), Color.Default);
 
+		/// <summary>
+		/// Get or sets the NullableDate
+		/// </summary>
+
+		/// <summary>
+		/// The TextColor property
+		/// </summary>
+		public static readonly BindableProperty TextColorProperty =
+            BindableProperty.Create("TextColor", typeof(Color), typeof(ExtendedDatePicker), Color.Default);
+
+		/// <summary>
+		/// The FontSize propert
+		/// </summary>
+		public static readonly BindableProperty FontSizeProperty =
+            BindableProperty.Create("FontSize", typeof(int), typeof(ExtendedDatePicker), 0);
+
         /// <summary>
-        /// Get or sets the NullableDate
+		/// The margin top tablet propert
+		/// </summary>
+		public static readonly BindableProperty MarginTopTabletProperty =
+            BindableProperty.Create("MarginTopTablet", typeof(int), typeof(ExtendedDatePicker), 0);
+
+        /// <summary>
+        /// The background transparent propert
         /// </summary>
-      
+        public static readonly BindableProperty BackgroundTransparentProperty =
+            BindableProperty.Create("BackgroundTransparent", typeof(bool), typeof(ExtendedDatePicker), true);
 
         /// <summary>
         /// Gets or sets the X alignment of the text
@@ -125,7 +148,43 @@ namespace Radovan.Plugin.Core.Controls
             set { SetValue(PlaceholderTextColorProperty, value); }
         }
 
-       
+		/// <summary>
+        /// Sets color for text
+        /// </summary>
+        public Color TextColor
+        {
+            get { return (Color)GetValue(TextColorProperty); }
+            set { SetValue(TextColorProperty, value); }
+        }
+
+		/// <summary>
+		/// Sets FontSize for text
+		/// </summary>
+        public int FontSize
+		{
+            get { return (int)GetValue(FontSizeProperty); }
+            set { SetValue(FontSizeProperty, value); }
+		}
+
+        /// <summary>
+		/// Sets magin top tablet
+		/// </summary>
+        public int MarginTopTablet
+        {
+            get { return (int)GetValue(MarginTopTabletProperty); }
+            set { SetValue(MarginTopTabletProperty, value); }
+        }
+
+        /// <summary>
+		/// Sets Background Transparent
+		/// </summary>
+        public bool BackgroundTransparent
+        {
+            get { return (bool)GetValue(BackgroundTransparentProperty); }
+            set { SetValue(BackgroundTransparentProperty, value); }
+        }
+
+        
 
         protected override void OnBindingContextChanged()
         {

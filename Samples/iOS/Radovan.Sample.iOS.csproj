@@ -125,6 +125,18 @@
       <Project>{278AD52A-AA45-4217-B6FD-F67B8959E63D}</Project>
       <Name>Radovan.Sample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.Abstractions\Radovan.Plugin.Abstractions.csproj">
+      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Name>Radovan.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.Core\Radovan.Plugin.Core.csproj">
+      <Project>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</Project>
+      <Name>Radovan.Plugin.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.iOS\Radovan.Plugin.iOS.csproj">
+      <Project>{D525F236-6A2D-4010-B1CC-4A4B8581C90B}</Project>
+      <Name>Radovan.Plugin.iOS</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.4.224\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />

@@ -20,6 +20,11 @@ namespace Radovan.Plugin.Core.Controls
 
         private static void OnSourcePlatformChanged(BindableObject bindable, object oldValue, object newValue)
         {
+			if (newValue == null && newValue.GetType() != typeof(FileImageSource))
+			{
+				return;
+			}
+
             var SourcePlatform = newValue as FileImageSource;
             string path = string.Empty;
             switch (Device.OS)

@@ -108,6 +108,18 @@
       <Project>{278AD52A-AA45-4217-B6FD-F67B8959E63D}</Project>
       <Name>Radovan.Sample</Name>
     </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.Android\Radovan.Plugin.Android.csproj">
+      <Project>{AD2D2DB4-E781-4CF1-9B62-3AAD264F196D}</Project>
+      <Name>Radovan.Plugin.Android</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.Abstractions\Radovan.Plugin.Abstractions.csproj">
+      <Project>{14C534B6-1984-41A9-A384-D3A5508588E3}</Project>
+      <Name>Radovan.Plugin.Abstractions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Radovan\Radovan.Plugin.Core\Radovan.Plugin.Core.csproj">
+      <Project>{67F9D3A8-F71E-4428-913F-C37AE82CDB24}</Project>
+      <Name>Radovan.Plugin.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets" Condition="Exists('..\..\packages\Xamarin.Android.Support.Vector.Drawable.23.3.0\build\Xamarin.Android.Support.Vector.Drawable.targets')" />
