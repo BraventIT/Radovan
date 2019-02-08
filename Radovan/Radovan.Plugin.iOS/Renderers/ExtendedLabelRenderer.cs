@@ -47,7 +47,7 @@ namespace Radovan.Plugin.iOS.Renderers
 		private void UpdateUi(ExtendedLabel view)
 		{
 			// Prefer font set through Font property.
-			if (view.Font == Font.Default)
+			if (view.FontAttributes == FontAttributes.None)
 			{
 				if (view.FontSize > 0)
 				{
@@ -119,7 +119,8 @@ namespace Radovan.Plugin.iOS.Renderers
 
 			if (view.FormattedText != null)
 			{
-				this.Control.AttributedText = view.FormattedText.ToAttributed(view.Font, view.TextColor);
+                var asfd = view.FormattedText.ToAttributed(Font.Default, view.TextColor);
+                this.Control.AttributedText = asfd;
 				LayoutSubviews();
 				return;
 			}
