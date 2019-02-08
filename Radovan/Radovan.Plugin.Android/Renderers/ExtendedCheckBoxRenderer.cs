@@ -11,7 +11,7 @@ using Xamarin.Forms.Platform.Android;
 [assembly: ExportRenderer(typeof(ExtendedCheckBox), typeof(ExtendedCheckBoxRenderer))]
 namespace Radovan.Plugin.Android.Renderers
 {
-	public class ExtendedCheckBoxRenderer : ViewRenderer<ExtendedCheckBox, CheckBox>
+    public class ExtendedCheckBoxRenderer : ViewRenderer<ExtendedCheckBox, CheckBox>
 	{
 		private ColorStateList defaultTextColor;
 

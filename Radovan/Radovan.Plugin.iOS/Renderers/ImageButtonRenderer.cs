@@ -2,17 +2,17 @@
 using System.ComponentModel;
 using System.Threading.Tasks;
 using CoreGraphics;
-using Radovan.Plugin.Core.Controls;
 using Radovan.Plugin.Core.Enums;
 using Radovan.Plugin.iOS.Renderers;
 using UIKit;
 using Xamarin.Forms;
 using Xamarin.Forms.Platform.iOS;
+using ImageButton = Radovan.Plugin.Core.Controls.ImageButton;
 
-[assembly: ExportRenderer(typeof(ImageButton), typeof(ImageButtonRenderer))]
+[assembly: ExportRenderer(typeof(ImageButton), typeof(CustomImageButtonRenderer))]
 namespace Radovan.Plugin.iOS.Renderers
 {
-	public partial class ImageButtonRenderer : ButtonRenderer
+    public partial class CustomImageButtonRenderer : ButtonRenderer
 	{
 		private const int CONTROL_PADDING = 2;
 

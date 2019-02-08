@@ -4,7 +4,6 @@ using Android.Graphics;
 using Radovan.Plugin.Android.Renderers;
 using Radovan.Plugin.Core.Controls;
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
 using Android.Graphics.Drawables;
 using Android.Content.Res;
 
